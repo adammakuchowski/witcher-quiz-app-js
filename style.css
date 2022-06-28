@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Slabo 27px', serif;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('/images/background.jpg');
+}
+
+.main-menu {
+    width: 70vh;
+    height: 25vh;
+    margin-top: 10vh;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.main-menu h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.main-menu p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.question-total-count {
+    
+}
+
+.start-button {
+    padding: 10px 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+}
