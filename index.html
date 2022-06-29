@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,45 @@
     <link rel="stylesheet" href="/style.css">
     <title>quiz-app-js</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="main-menu">
+        <div class="menu-container custom-container active">
             <h1>The Witcher QUIZ:</h1>
             <p>How well do you know the witcher saga ?</p>
             <p>Total number of questions: <span class="question-total-count">5</span></p>
-            <button type="button" class="start-button">Start QUIZ</button>
+            <button type="button" class="button">Start QUIZ</button>
         </div>
-        
+
+        <div class="quiz-container custom-container">
+            <div class="question-number">
+                Question 1 of 5 
+            </div>
+            <div class="question-content">
+                What was the name of Ciri's sword ?
+            </div>
+            <div class="answer-container">
+                <div class="answer">Zirael</div>
+                <div class="answer">Falka</div>
+                <div class="answer">Imlerith</div>
+                <div class="answer">Ge'els</div>
+            </div>
+            <div class="next-question-button">
+                <button type="button" class="button">Next</button>
+            </div>
+            <div class="results-answer">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
     </div>
 
 
-    <script src="/main.js" ></script>
+    <script src="/main.js"></script>
 </body>
+
 </html>
