@@ -11,14 +11,14 @@
 
 <body>
     <div class="container">
-        <div class="menu-container custom-container active">
+        <div class="menu-container custom-container hide">
             <h1>The Witcher QUIZ:</h1>
             <p>How well do you know the witcher saga ?</p>
             <p>Total number of questions: <span class="question-total-count">5</span></p>
             <button type="button" class="button">Start QUIZ</button>
         </div>
 
-        <div class="quiz-container custom-container">
+        <div class="quiz-container custom-container hide">
             <div class="question-number">
                 Question 1 of 5 
             </div>
@@ -43,9 +43,42 @@
             </div>
         </div>
 
+        <div class="resault-container custom-container hide">
+            <h1>Quiz Resault</h1>
+            <table>
+                <tr>
+                    <td>Total Question</td>
+                    <td><span class="total-question">5</span></td>
+                </tr>
+                <tr>
+                    <td>Attempt</td>
+                    <td><span class="total-attempt">4</span></td>
+                </tr>
+                <tr>
+                    <td>Correct</td>
+                    <td><span class="total-correct">3</span></td>
+                </tr>
+                <tr>
+                    <td>Wrong</td>
+                    <td><span class="total-wrong">2</span></td>
+                </tr>
+                <tr>
+                    <td>Perectage</td>
+                    <td><span class="total-perectage">60.00%</span></td>
+                </tr>
+                <tr>
+                    <td>Your Total Score</td>
+                    <td><span class="total-score">3/5</span></td>
+                </tr>
+            </table>
+            <button type="button" class="button">Try Again</button>
+            <button type="button" class="button">Go To Home</button>
+        </div>
+
+
     </div>
 
-
+    <script src="/questionsContent.js"></script>
     <script src="/main.js"></script>
 </body>
 
