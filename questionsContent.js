@@ -10,7 +10,7 @@ const questionsContent = [
         correct:1
     },
     {
-        quest:'Leo Bonhart, collected three witcher medallions in his life as a trophy. Which ones?',
+        quest:'Leo Bonhart, collected three witcher medallions in his life as a trophy. Which ones ?',
         options:['Three wolf medallions','The wolf, the cat and the vipers','The wolf and the cat','The wolf, the cat and the griffin'],
         correct:3
     },
