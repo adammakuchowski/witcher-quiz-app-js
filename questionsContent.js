@@ -5,8 +5,8 @@ const questionsContent = [
         correct:0
     },
     {
-        quest:'Po kim Cahir odziedziczył swe koleje imiona (Mawr Dyffryn) ?',
-        options:['After my father and grandfather','After my mother and great-grandfather','After my father and great-grandfather','After my mother and grandfather'],
+        quest:'After whom Cahir inherited his names (Mawr Dyffryn) ?',
+        options:['After his father and grandfather','After his mother and great-grandfather','After his father and great-grandfather','After his mother and grandfather'],
         correct:1
     },
     {
@@ -17,7 +17,7 @@ const questionsContent = [
     {
         quest:'What was the real name of the Bloody Baron ?',
         options:['Folan Stenger','Filip Stenger','Fercart Stenger','Fergus Stenger'],
-        correct:0
+        correct:1
     },
     {
         quest:'What was the secret of Niellen, a hunter from the village of Konary ?',
