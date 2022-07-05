@@ -1,6 +1,6 @@
 # About witcher-quiz-app-js project
 
-Witcher quiz project verifies knowledge of games and books about Witcher
+The Witcher quiz project to learning and test your knowledge of the game world and book about Geralt's.
 
 ## Project description 
 
