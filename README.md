@@ -9,7 +9,7 @@ Quiz project using HTML CSS and JS. Simple project to learn how to use HTML, CSS
 ### Game instruction
 The start button starts the quiz \
 You can give only one answer to the question \
-Answer is required to proceed to the next question \ 
+Answer is required to proceed to the next question \
 No limit to replay the game
 
 # Screenshots
