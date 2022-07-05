@@ -5,6 +5,9 @@ const resultsAnswer = document.querySelector('.results-answer')
 const mainMenu = document.querySelector('.menu-container')
 const quizGame = document.querySelector('.quiz-container')
 const quizSummary = document.querySelector('.resault-container')
+const startQuizButton = document.querySelector('.start-quiz-button')
+const tryAgainButton = document.querySelector('.try-again-button')
+const goToHomeButton = document.querySelector('.go-to-home-button')
 
 const nextQuestionButton = document.querySelector('.next-question-button')
 
@@ -34,6 +37,9 @@ const getNewQuestion = () => {
     let animationDelay = 0.1
     answerContainer.innerHTML = ''
     answerId = 0
+
+    nextQuestionButton.disabled = true
+    nextQuestionButton.classList.add('no-active')
 
     for (const answer of currentQuestion.answers) {
         const option = document.createElement('div')
@@ -66,6 +72,8 @@ const giveAnswer = (answer) => {
             }
         }
     }
+    nextQuestionButton.removeAttribute('disabled')
+    nextQuestionButton.classList.remove('no-active')
 
     freezeAnswers()
 }
@@ -110,15 +118,39 @@ const showQuizResults = () => {
     quizSummary.querySelector('.total-attempt').innerHTML = attempt
     quizSummary.querySelector('.total-correct').innerHTML = correctAnswers
     quizSummary.querySelector('.total-wrong').innerHTML = (questionsContent.length - correctAnswers)
-    quizSummary.querySelector('.total-perectage').innerHTML = `${((correctAnswers/questionsContent.length) * 100)} %`
+    quizSummary.querySelector('.total-perectage').innerHTML = `${((correctAnswers / questionsContent.length) * 100)} %`
     quizSummary.querySelector('.total-score').innerHTML = `${correctAnswers} / ${questionsContent.length}`
 }
 
-window.onload = function () {
+const startQuiz = () => {
+    questionCounter = 0
+    currentQuestion
+    availableQuestions = []
+    answerId = 0
+    correctAnswers = 0
+    attempt++
+
+    mainMenu.classList.add('hide')
+    quizSummary.classList.add('hide')
+    quizGame.classList.remove('hide')
+
     setAvailableQuestions()
     getNewQuestion()
 
     answerPoints()
 }
 
+const getMenu = () => {
+    quizSummary.classList.add('hide')
+    quizGame.classList.add('hide')
+    mainMenu.classList.remove('hide')
+}
+
+window.onload = function () {
+    getMenu()
+}
+
 nextQuestionButton.addEventListener('click', nextQuestion)
+startQuizButton.addEventListener('click', startQuiz)
+tryAgainButton.addEventListener('click', startQuiz)
+goToHomeButton.addEventListener('click', getMenu)

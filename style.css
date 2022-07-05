@@ -156,9 +156,14 @@
 .quiz-container .answer-container .answer.freeze {
     pointer-events: none;
 }
+
 .quiz-container .next-question-button{
     border-top: 1px solid white;
     margin-top: 20px;
+}
+
+.quiz-container .next-question-button.no-active{
+    cursor: default;
 }
 
 .quiz-container .results-answer div{
