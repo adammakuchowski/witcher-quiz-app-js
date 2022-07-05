@@ -7,10 +7,11 @@ Witcher quiz project verifies knowledge of games and books about Witcher
 Quiz project using HTML CSS and JS. Simple project to learn how to use HTML, CSS and javascript. I am big fan of the world of the Witcher, so creating this project was very pleasant.
 
 ### Game instruction
-The start button starts the quiz \
-You can give only one answer to the question \
-Answer is required to proceed to the next question \
-No limit to replay the game
+
+- The start button starts the quiz \
+- You can give only one answer to the question \
+- Answer is required to proceed to the next question \
+- No limit to replay the game
 
 # Screenshots
 
