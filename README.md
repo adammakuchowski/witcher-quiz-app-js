@@ -15,7 +15,7 @@ Quiz project using HTML CSS and JS. Simple project to learn how to use HTML, CSS
 
 # Screenshots
 
-## Main manu
+## Main menu
 ![witcher-quiz-app-js-1](https://user-images.githubusercontent.com/94242778/177374909-5e20890e-a4ec-41a1-accd-78f9c3ac1e5d.PNG)
 
 ## Correct answer
